@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module models.ships</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title"><a href="models.html" class="white">models</a>.ships</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:/Users/MaeZhao/Desktop/Anduril/models/ships.py">/Users/MaeZhao/Desktop/Anduril/models/ships.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="json.html">json</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="models.model.html#Model">models.model.Model</a>(<a href="builtins.html#object">builtins.object</a>)
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="models.ships.html#Ships">Ships</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Ships">class <strong>Ships</strong></a>(<a href="models.model.html#Model">models.model.Model</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Ships">Ships</a>(reload_day_schedule:&nbsp;int&nbsp;=&nbsp;None)<br>
+&nbsp;<br>
+<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="models.ships.html#Ships">Ships</a></dd>
+<dd><a href="models.model.html#Model">models.model.Model</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Ships-__init__"><strong>__init__</strong></a>(self, reload_day_schedule: int = None)</dt><dd><span class="code">Initializes&nbsp;model&nbsp;object<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;file_path&nbsp;(str):&nbsp;file&nbsp;path&nbsp;of&nbsp;object<br>
+&nbsp;&nbsp;&nbsp;&nbsp;reload_day_schedule&nbsp;(int)&nbsp;(Optional):&nbsp;the&nbsp;number&nbsp;of&nbsp;days&nbsp;in&nbsp;between&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;loading&nbsp;new&nbsp;data,&nbsp;defaults&nbsp;to&nbsp;1</span></dd></dl>
+
+<dl><dt><a name="Ships-fetch_data"><strong>fetch_data</strong></a>(self)</dt><dd><span class="code">Fetches&nbsp;data&nbsp;from&nbsp;API</span></dd></dl>
+
+<dl><dt><a name="Ships-get_heaviest_cached"><strong>get_heaviest_cached</strong></a>(self, n: int)</dt><dd><span class="code">Gets&nbsp;the&nbsp;n&nbsp;heaviest&nbsp;ships&nbsp;from&nbsp;cached&nbsp;data<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n&nbsp;(int):&nbsp;specified&nbsp;number&nbsp;of&nbsp;ships<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list</span></dd></dl>
+
+<dl><dt><a name="Ships-get_heaviest_live"><strong>get_heaviest_live</strong></a>(self, n: int)</dt><dd><span class="code">Requests&nbsp;the&nbsp;n&nbsp;heaviest&nbsp;ships&nbsp;from&nbsp;API<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n&nbsp;(int):&nbsp;specified&nbsp;number&nbsp;of&nbsp;ships<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list</span></dd></dl>
+
+<dl><dt><a name="Ships-get_lightest_cached"><strong>get_lightest_cached</strong></a>(self, n: int)</dt><dd><span class="code">Gets&nbsp;the&nbsp;n&nbsp;lightest&nbsp;number&nbsp;of&nbsp;ships&nbsp;from&nbsp;cached&nbsp;data<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n&nbsp;(int):&nbsp;specified&nbsp;number&nbsp;of&nbsp;ships<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list</span></dd></dl>
+
+<dl><dt><a name="Ships-get_lightest_live"><strong>get_lightest_live</strong></a>(self, n: int)</dt><dd><span class="code">Requests&nbsp;the&nbsp;n&nbsp;lightest&nbsp;ships&nbsp;from&nbsp;the&nbsp;API<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n&nbsp;(int):&nbsp;the&nbsp;specified&nbsp;number&nbsp;of&nbsp;ships<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="models.model.html#Model">models.model.Model</a>:<br>
+<dl><dt><a name="Ships-get_data"><strong>get_data</strong></a>(self)</dt><dd><span class="code">Gets&nbsp;all&nbsp;model&nbsp;data<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list</span></dd></dl>
+
+<dl><dt><a name="Ships-load_latest_fetch"><strong>load_latest_fetch</strong></a>(self)</dt><dd><span class="code">Loads&nbsp;cached&nbsp;data.&nbsp;If&nbsp;cached&nbsp;data&nbsp;DNE&nbsp;or&nbsp;the&nbsp;number&nbsp;of&nbsp;days&nbsp;in&nbsp;between<br>
+current&nbsp;request&nbsp;and&nbsp;last&nbsp;fetch&nbsp;is&nbsp;greater&nbsp;than&nbsp;the&nbsp;specified&nbsp;reload&nbsp;<br>
+day&nbsp;schedule</span></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="models.model.html#Model">models.model.Model</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
