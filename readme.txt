@@ -1,3 +1,5 @@
+Exploration of python library building with unittesting
+
 TO TEST: python3 -m pytest
 
 TO RUN:
